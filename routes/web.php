@@ -11,6 +11,29 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
-});
+Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
+
+Route::get('product', [
+    'as' => 'product.index', 
+    'uses' => 'ProductController@index'
+]);
+
+Route::get('product/show', [
+    'as' => 'product.show',
+    'uses' => 'ProductController@show'
+]);
+
+Route::get('user/show', [
+    'as' => 'user.show',
+    'uses' => 'UserController@show'
+]);
+
+Route::get('cart', [
+    'as' => 'cart.index',
+    'uses' => 'CartController@index'
+]);
+
+Route::get('order/create', [
+    'as' => 'order.create',
+    'uses' => 'OrderController@create'
+]);
