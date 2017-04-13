@@ -1,5 +1,5 @@
 <div class="beta-products-list">
-    <h4>Sản phẩm nổi bật</h4>
+    <h3 class="color-full">Sản phẩm nổi bật</h3>
 
     <div class="beta-products-details">
         <div class="clearfix"></div>
@@ -47,7 +47,8 @@
                 <div class="single-item-caption">
                     <a class="add-to-cart pull-left" href="shopping_cart.html">
                         <i class="fa fa-shopping-cart"></i></a>
-                    <a class="beta-btn primary" href="product.html">Details 
+                    <a class="beta-btn primary" 
+                        href="{{ route('product.show') }}">Details 
                         <i class="fa fa-chevron-right"></i></a>
                     <div class="clearfix"></div>
                 </div>
@@ -95,7 +96,8 @@
                 <div class="single-item-caption">
                     <a class="add-to-cart pull-left" href="shopping_cart.html">
                         <i class="fa fa-shopping-cart"></i></a>
-                    <a class="beta-btn primary" href="product.html">Details 
+                    <a class="beta-btn primary" 
+                        href="{{ route('product.show') }}">Details 
                         <i class="fa fa-chevron-right"></i></a>
                     <div class="clearfix"></div>
                 </div>
@@ -141,7 +143,8 @@
                 <div class="single-item-caption">
                     <a class="add-to-cart pull-left" href="shopping_cart.html">
                         <i class="fa fa-shopping-cart"></i></a>
-                    <a class="beta-btn primary" href="product.html">Details 
+                    <a class="beta-btn primary" 
+                        href="{{ route('product.show') }}">Details 
                         <i class="fa fa-chevron-right"></i></a>
                     <div class="clearfix"></div>
                 </div>
@@ -188,7 +191,8 @@
                 <div class="single-item-caption">
                     <a class="add-to-cart pull-left" href="shopping_cart.html">
                         <i class="fa fa-shopping-cart"></i></a>
-                    <a class="beta-btn primary" href="product.html">Details 
+                    <a class="beta-btn primary" 
+                        href="{{ route('product.show') }}">Details 
                         <i class="fa fa-chevron-right"></i></a>
                     <div class="clearfix"></div>
                 </div>

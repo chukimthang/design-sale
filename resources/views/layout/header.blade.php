@@ -12,7 +12,7 @@
 
             <div class="pull-right auto-width-right">
                 <ul class="top-details menu-beta l-inline">
-                    <li><a href="#">
+                    <li><a href="{{ route('user.show') }}">
                         <i class="fa fa-user"></i>
                         Tài khoản
                     </a></li>
@@ -28,8 +28,9 @@
     <div class="header-body">
         <div class="container beta-relative">
             <div class="pull-left">
-                <a href="index.html" id="logo">
-                    <img src="images/logo-Copy.png" width="180px" alt=""></a>
+                <a href="{{ route('home') }}" id="logo">
+                    <img src="{!! asset('images/logo-Copy.png') !!}" 
+                        width="180px" alt=""></a>
             </div>
 
             <div class="pull-right beta-components space-left ov">
@@ -53,15 +54,18 @@
 
                 <div class="beta-comp">
                     <div class="beta-select">
-                        <i class="fa fa-shopping-cart"></i> 
-                        Giỏ hàng (Trống) <i class="fa fa-chevron-down"></i>
+                        <a href="{{ route('cart.index') }}">
+                            <i class="fa fa-shopping-cart"></i> 
+                            Giỏ hàng (Trống)
+                        </a>
+                        <i class="fa fa-chevron-down"></i>
                     </div>
 
                     <div class="beta-dropdown cart-body">
                         <div class="cart-item">
                             <div class="media">
                                 <a class="pull-left" href="#">
-                                    <img src="images/cart/1.png" 
+                                    <img src="{{ asset('images/cart/1.png') }}"
                                         alt="">
                                 </a>
                                 <div class="media-body">
@@ -78,7 +82,7 @@
                         <div class="cart-item">
                             <div class="media">
                                 <a class="pull-left" href="#">
-                                    <img src="images/cart/1.png" 
+                                    <img src="{{ asset('images/cart/1.png') }}"
                                         alt=""></a>
                                 <div class="media-body">
                                     <span class="cart-item-title">
@@ -94,7 +98,7 @@
                         <div class="cart-item">
                             <div class="media">
                                 <a class="pull-left" href="#">
-                                    <img src="images/cart/1.png" 
+                                    <img src="{{ asset('images/cart/1.png') }}"
                                         alt=""></a>
                                 <div class="media-body">
                                     <span class="cart-item-title">
@@ -146,23 +150,14 @@
                     
                     <div class="collapse navbar-collapse" id="menu">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Giới thiệu</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle"
-                                    data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" 
-                                    aria-expanded="false">
-                                    Sản phẩm
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Chuyên mục 1</a></li>
-                                    <li><a href="#">Chuyên mục 2</a></li>
-                                    <li><a href="#">Chuyên mục 3</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="{!! route('home') !!}">
+                                Trang chủ</a></li>
+                            <li><a href="#">
+                                Giới thiệu</a></li>
+                            <li><a href="{!! route('product.index') !!}">
+                                Sản phẩm</a></li>
+                            <li><a href="#">
+                                Liên hệ</a></li>
                         </ul>
                     </div>
                 </div>

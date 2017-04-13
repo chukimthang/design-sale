@@ -17,11 +17,9 @@
 </head>
 <body>
     @include('layout.header')
-    @include('layout.slide')
-    
     @yield('content')
-
     @include('layout.footer')
+    
     <script src="{{ asset('js/user.js') }}"></script>
 </body>
 </html>

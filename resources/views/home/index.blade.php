@@ -1,6 +1,8 @@
 @extends('layout.app')
 
 @section('content')
+@include('layout.slide')
+
 <div class="container">
     <div id="content" class="space-top-none">
         <div class="main-content">
@@ -9,8 +11,6 @@
             <div class="row">
                 <div class="col-sm-12">
                     @include('home.product-new')
-
-                    <div class="space50">&nbsp;</div>
 
                     @include('home.product-top')
                 </div>
